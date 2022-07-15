@@ -1,18 +1,15 @@
-// GLOBALS
+// CommonJS - every file is module (by default)
+// Modules - Encapsulated code (only share minimum)
 
-// __dirname
-// __filename
-// require
-// module
-// process
+const secret = 'SUPER SECRET';
 
-console.log(__dirname)
-console.log(__filename)
+const john = 'john';
+const peter = 'peter';
 
-setInterval(() => {
-  console.log('hello world')
-}, 1000);
+const sayHi = (name) => {
+  console.log(`Hello there ${name}`);
+}
 
-setTimeout(() => {
-  console.log('hello world 2');
-}, 5000);
+sayHi('susan');
+sayHi(john);
+sayHi(peter);
