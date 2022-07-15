@@ -1,6 +1,6 @@
 // CommonJS - every file is module (by default)
 // Modules - Encapsulated code (only share minimum)
 
-sayHi('susan');
+sayHi('Susan');
 sayHi(john);
 sayHi(peter);
