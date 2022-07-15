@@ -4,6 +4,7 @@
 const names = require('./03a-names.ts');
 const sayHi = require('./03b-utils.ts');
 const data = require('./03c-alternative-exports.ts');
+require('./03d-mind-grenade.ts');
 
 console.log(names);
 console.log(data);
