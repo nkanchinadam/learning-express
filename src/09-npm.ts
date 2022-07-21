@@ -18,3 +18,11 @@ const lodash = require('lodash');
 const items = [1, [2, [3, [4]]]]
 const newItems = lodash.flattenDeep(items);
 console.log(newItems);
+
+// npm uninstall <packageName> - removes the package
+// delete node_modules folder and run npm install
+
+// package versions - a.b.c
+// a indicates major (breaking) changes
+// b indicates minor (backward compatible) changes
+// c indicates patches/bug fixes
