@@ -6,9 +6,10 @@ const app = express();
 // setup static and middleware
 app.use(express.static('./public'));
 
-app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './navbar-app/index.html'));
-});
+// other options for index.html are adding to static assets & server-side rendering
+// app.get('/', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, './navbar-app/index.html'));
+// });
 
 app.get('/about', (req, res) => {
   res.status(200).send('About Page');
