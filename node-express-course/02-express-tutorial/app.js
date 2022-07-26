@@ -7,7 +7,6 @@ const app = express();
 app.use(express.static('./public'));
 
 app.get('/', (req, res) => {
-  console.log(__dirname);
   res.sendFile(path.resolve(__dirname, './navbar-app/index.html'));
 });
 
